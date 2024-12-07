@@ -3,6 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: x-large;
 }
 
 .main {
@@ -21,12 +22,28 @@ body {
     border: 1px solid black;
 }
 
+.lower:hover {
+    background-color: lightgray;
+}
+
+.lower:active {
+    background-color: darkred;
+    color: white;
+}
+
 #screen {
     display: flex;
-    width: 300px;
+    width: 280px;
     height: 50px;
     border: 1px solid black;
     justify-content: flex-end;
     align-items: center;
-    background-color: lightgray;
+    background-color: rgb(253, 230, 101);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#zero {
+    max-width: 148px;
+    flex-shrink: 0;
 }
